@@ -1,0 +1,70 @@
+.map__title {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.map__decription {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 56px;
+  text-align: center;
+  color: #404040;
+}
+.map {
+  position: relative;
+  svg {
+    path:hover {
+      fill: #ff0000;
+      transition-property: color, background-color, border-color,
+        text-decoration-color, fill, stroke;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 300ms;
+    }
+  }
+}
+.map__cards {
+  position: absolute;
+  top: 500px;
+  padding-bottom: 116px;
+}
+
+@media screen and (max-width: 1024px) {
+  .app {
+    padding: 0 40px 0;
+  }
+  .map {
+    svg {
+      max-width: 700px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .map__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .map__decription {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .map__cards {
+    padding-bottom: 48px;
+    top: 240px;
+  }
+  .map {
+    svg {
+      max-width: 310px;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
